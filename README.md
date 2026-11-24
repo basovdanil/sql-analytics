@@ -1,5 +1,7 @@
 # sql-analytics — отчёты по продажам на чистом SQL
 
+[![tests](https://github.com/basovdanil/sql-analytics/actions/workflows/tests.yml/badge.svg)](https://github.com/basovdanil/sql-analytics/actions/workflows/tests.yml)
+
 Разбор таблицы продаж через SQLite: 10 именованных запросов с оконными функциями, CTE и `CASE`,
 CLI на стандартной библиотеке Python, самопроверка сходимости отчётов перед выдачей.
 
@@ -23,13 +25,13 @@ sales.csv ──▶ build ──▶ SQLite: таблица sales + индекс�
 Нужен только Python 3.9+ (проверено на 3.11, SQLite 3.38.4). Внешних зависимостей нет.
 
 ```bash
-py -3 demo/make_demo.py
-py -3 sales_sql.py build
-py -3 sales_sql.py list
-py -3 sales_sql.py run top_products
-py -3 sales_sql.py run revenue_by_month --json
-py -3 sales_sql.py run weekday_profile --csv out/weekday.csv
-py -3 sales_sql.py check
+python demo/make_demo.py
+python sales_sql.py build
+python sales_sql.py list
+python sales_sql.py run top_products
+python sales_sql.py run revenue_by_month --json
+python sales_sql.py run weekday_profile --csv out/weekday.csv
+python sales_sql.py check
 ```
 
 `build` читает `demo/sales.csv` по умолчанию, `--csv` и `--db` задают свои пути.
@@ -84,7 +86,7 @@ CHECKED=12 FAILED=0
 На демо-базе: 12 проверок, 0 провалов, код возврата `0`.
 
 ```bash
-py -3 -m unittest discover -s tests -v
+python -m unittest discover -s tests -v
 ```
 
 19 тестов: разбор CSV и отказ на битых датах, числах, скидках вне 0–100, пустом файле и нехватке колонок;
