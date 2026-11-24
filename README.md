@@ -118,3 +118,7 @@ CLI-коды: `0` — сошлось, `2` — неизвестный запро�
 - Схема фиксированная: `store`, `category`, `product`, `units`, `unit_price`, `discount_pct`. Возвраты и
   отрицательные количества не поддержаны (проверка `units > 0`), для них нужен отдельный признак операции.
 - ABC-разбивка по порогам 80/95 фиксирована в запросе, а не вынесена в параметр.
+
+---
+
+Другие проекты: [github.com/basovdanil](https://github.com/basovdanil) · разборы с числами: [portfolio](https://basovdanil.github.io/portfolio/)

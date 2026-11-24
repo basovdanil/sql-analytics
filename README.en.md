@@ -47,3 +47,7 @@ and missing columns; report arithmetic; CLI exit codes.
 
 The demo data is synthetic. The reports are written for SQLite; the window functions used are
 portable to PostgreSQL, the file-loading part is not.
+
+---
+
+More projects: [github.com/basovdanil](https://github.com/basovdanil) · write-ups: [portfolio](https://basovdanil.github.io/portfolio/)
