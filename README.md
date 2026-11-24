@@ -2,6 +2,8 @@
 
 [![tests](https://github.com/basovdanil/sql-analytics/actions/workflows/tests.yml/badge.svg)](https://github.com/basovdanil/sql-analytics/actions/workflows/tests.yml)
 
+**[English](README.en.md)** · [Русский](README.md)
+
 Разбор таблицы продаж через SQLite: 10 именованных запросов с оконными функциями, CTE и `CASE`,
 CLI на стандартной библиотеке Python, самопроверка сходимости отчётов перед выдачей.
 
