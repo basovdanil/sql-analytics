@@ -1,5 +1,10 @@
 # sql-analytics
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/basovdanil/basovdanil/main/assets/tools.png"
+       alt="Eight tools with tests and exit codes" width="100%">
+</p>
+
 [![tests](https://github.com/basovdanil/sql-analytics/actions/workflows/tests.yml/badge.svg)](https://github.com/basovdanil/sql-analytics/actions/workflows/tests.yml)
 
 Ten named SQL reports over a sales table in SQLite: revenue by month, top products, weekday
