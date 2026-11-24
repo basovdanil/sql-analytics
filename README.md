@@ -85,6 +85,8 @@ CHECKED=12 FAILED=0
 
 На демо-базе: 12 проверок, 0 провалов, код возврата `0`.
 
+## Тесты
+
 ```bash
 python -m unittest discover -s tests -v
 ```
